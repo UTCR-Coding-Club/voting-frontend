@@ -1,0 +1,32 @@
+.landing-page {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  max-height: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+}
+
+.landing-placeholder-div {
+  width: 75%;
+  background-color: #009fe3;
+}
+
+.landing-placeholder-div img {
+  width: 90%;
+  height: 90%;
+}
+
+.landing-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10vh;
+}
+
+.landing-logo-text-under {
+  width: 170px;
+  height: 110px;
+}
