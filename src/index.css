@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 :root {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -16,4 +18,12 @@ body {
   place-items: center;
   min-width: 100vw;
   min-height: 100vh;
+}
+
+h1 {
+  color: #101720;
+}
+
+h3 {
+  color: 101720;
 }
