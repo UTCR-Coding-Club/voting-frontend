@@ -30,3 +30,8 @@
   width: 170px;
   height: 110px;
 }
+
+.landing-login h3 a {
+  cursor: pointer;
+  text-decoration: none;
+}

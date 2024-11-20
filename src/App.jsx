@@ -1,19 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
 
-import Landing from "./pages/Landing";
-import Signup from "./pages/login/Signup";
+import router from "./Router";
 
 import "./App.css";
 
 const App = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/signup" element={<Signup />} />
-      </Routes>
-    </BrowserRouter>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
