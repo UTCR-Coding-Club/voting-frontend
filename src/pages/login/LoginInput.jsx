@@ -1,10 +1,25 @@
 import "./LoginInput.css";
 
 // eslint-disable-next-line react/prop-types
-const LoginInput = ({ title, placeholder, type }) => {
+const LoginInput = ({ title, placeholder, type, handleValue }) => {
   return (
     <div className="input-container">
-      <input placeholder={placeholder} required type={type} />
+      {type === "password" ? (
+        <input
+          minLength={8}
+          required={true}
+          placeholder={placeholder}
+          type={type}
+          onBlur={(e) => handleValue(e.target.value)}
+        />
+      ) : (
+        <input
+          required={true}
+          placeholder={placeholder}
+          type={type}
+          onBlur={(e) => handleValue(e.target.value)}
+        />
+      )}
       <span>{title}</span>
     </div>
   );

@@ -6,7 +6,7 @@ import logo2 from "../assets/logos/UTC-text-under-upscaled.png";
 
 import "./Landing.css";
 
-const Landing2 = () => {
+const Landing = () => {
   const navigate = useNavigate();
 
   return (
@@ -23,4 +23,4 @@ const Landing2 = () => {
   );
 };
 
-export default Landing2;
+export default Landing;

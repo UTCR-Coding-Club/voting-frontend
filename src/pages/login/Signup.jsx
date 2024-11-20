@@ -1,9 +1,13 @@
+import { useNavigate } from "react-router-dom";
+
 import LoginInput from "./LoginInput";
 import logo from "../../assets/logos/UTC-reading-logo.png";
 
 import "./Signup.css";
 
 const Signup = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="signup-container">
       <img className="signup-utc-logo" src={logo} alt="" />
@@ -20,7 +24,7 @@ const Signup = () => {
         </button>
       </form>
       <h3>
-        Already have an account? <a>Log in</a>
+        Already have an account? <a onClick={() => navigate("/")}>Log in</a>
       </h3>
     </div>
   );
