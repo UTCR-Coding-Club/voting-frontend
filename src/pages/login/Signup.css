@@ -33,4 +33,5 @@
 .signup-container h3 a {
   cursor: pointer;
   color: #009fe3;
+  text-decoration: none;
 }

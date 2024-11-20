@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import LoginInput from "./LoginInput";
 import logo from "../../assets/logos/UTC-reading-logo.png";
 
@@ -20,7 +22,10 @@ const Signup = () => {
         </button>
       </form>
       <h3>
-        Already have an account? <a>Log in</a>
+        Already have an account?{" "}
+        <Link to={"/"}>
+          <a>Log in</a>
+        </Link>
       </h3>
     </div>
   );
