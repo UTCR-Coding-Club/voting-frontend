@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 import Landing from "./pages/Landing";
 import Signup from "./pages/login/Signup";
+import AdminDashboard from "./pages/dashboard/admin/AdminDashboard";
 
 const router = createBrowserRouter([
   {
@@ -14,8 +15,13 @@ const router = createBrowserRouter([
     element: <Signup />,
   },
   {
+    path: "/admin",
+    element: <AdminDashboard />,
+    children: [],
+  },
+  {
     path: "*",
-    element: <p style={"color: black"}>404 Error - Nothing here...</p>,
+    element: <h1>404 Error - Nothing here...</h1>,
   },
 ]);
 
