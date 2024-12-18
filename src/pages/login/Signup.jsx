@@ -24,7 +24,7 @@ const Signup = () => {
       <h3>
         Already have an account?{" "}
         <Link to={"/"}>
-          <a>Log in</a>
+          Log in
         </Link>
       </h3>
     </div>

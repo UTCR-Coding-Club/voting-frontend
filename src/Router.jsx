@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 import Landing from "./pages/Landing";
 import Signup from "./pages/login/Signup";
+import Home from "./pages/home/Home";
 
 const router = createBrowserRouter([
   {
@@ -14,8 +15,12 @@ const router = createBrowserRouter([
     element: <Signup />,
   },
   {
+    path: "/home",
+    element: <Home />,
+  },
+  {
     path: "*",
-    element: <p style={"color: black"}>404 Error - Nothing here...</p>,
+    element: <p>404 Error - Nothing here...</p>,
   },
 ]);
 

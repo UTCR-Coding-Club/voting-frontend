@@ -1,0 +1,18 @@
+
+a {
+    color: black;
+    text-decoration: none;
+    width: 5cm;
+}
+
+.test {
+    margin: auto;
+    background-color: #eeeeee;
+    color: black;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.test:hover {
+    background-color: #a7a1a1
+}

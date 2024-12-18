@@ -16,7 +16,7 @@ const Landing = () => {
         <h3>
           Create an account{" "}
           <Link to={"/signup"}>
-            <a>here</a>
+            here
           </Link>
         </h3>
       </div>
