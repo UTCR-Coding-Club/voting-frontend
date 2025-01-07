@@ -1,5 +1,6 @@
 .admin-sidebar-container {
     width: 20%;
+    min-width: 100px;
     height: 100vh;
     display: flex;
     flex-direction: column;

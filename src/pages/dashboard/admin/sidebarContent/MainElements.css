@@ -1,0 +1,31 @@
+.elections-container {
+    width: 20%;
+    height: 100%;
+    background-color: #f1f5f5;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .user-management-container {
+    width: 20%;
+    height: 100%;
+    background-color: #f1f5f5;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .vote-history-container {
+    width: 20%;
+    height: 100%;
+    background-color: #f1f5f5;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .results-container {
+    width: 20%;
+    height: 100%;
+    background-color: #f1f5f5;
+    display: flex;
+    flex-direction: row;
+  }

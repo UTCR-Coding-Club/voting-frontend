@@ -1,0 +1,59 @@
+.elections-container {
+    width: 20%;
+    height: 100vh;
+    padding: 12px 10px;
+    position: relative;
+  }
+  
+  .header-left h1 {
+    font-size: 2.25rem;
+    font-weight: 1000;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  .user-management-container {
+    width: 20%;
+    height: 100vh;
+    padding: 12px 10px;
+    position: relative;
+  }
+  
+  .header-left h1 {
+    font-size: 2.25rem;
+    font-weight: 1000;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  .vote-history-container {
+    width: 20%;
+    height: 100vh;
+    padding: 12px 10px;
+    position: relative;
+  }
+  
+  .header-left h1 {
+    font-size: 2.25rem;
+    font-weight: 1000;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+.results-container {
+    width: 20%;
+    height: 100vh;
+    padding: 12px 10px;
+    position: relative;
+  }
+  
+  .header-left h1 {
+    font-size: 2.25rem;
+    font-weight: 1000;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
