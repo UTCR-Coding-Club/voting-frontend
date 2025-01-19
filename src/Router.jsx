@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Signup from "./pages/login/Signup";
 import Home from "./pages/home/Home";
+import Vote from "./pages/vote/Vote";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/home",
     element: <Home />,
+  },
+  {
+    path: "/vote",
+    element: <Vote />,
   },
   {
     path: "*",

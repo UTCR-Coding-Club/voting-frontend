@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('root')).render(// strict mode makes everything render 2 times
   <StrictMode>
     <App />
   </StrictMode>,

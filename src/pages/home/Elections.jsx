@@ -1,25 +1,34 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router";
 
 import "./Elections.css"
 
 
 const Elections = ({data}) => {
+    
+  const navigate = useNavigate();
+    
 
-    return (
-        <div>
-            {data.map(i => {
-                if (Date.parse(i[4]) < Date.now()) {console.log("out of date")}
-                return (// must find a way to pass data through
-                    <div>
-                        <p><b>{i[1]}</b></p>
-                        <div>{i[2]}</div>
-                        <Link to="/vote" className="test">vote</Link>
-                    </div>
-                );
-            })}
-        </div>
-    );
+  const handleElection = (e, electionId) => {
+    e.preventDefault();
+    navigate(`/vote?id=${electionId}`);// temp solution numbers in uri is very bad (encrypting and putting in url would be better, or props 💀💀)
+  }
+
+  const electionList = data.map(i => {
+    if (Date.parse(i[4]) > Date.now()) {
+      return (
+        <div key={i.toString()}  className="card">
+          <h1><b>{i[1]}</b></h1>
+          <p>{i[2]}</p>
+          <button onClick={(e) => handleElection(e, i[0])}>vote</button>
+          </div>
+      );
+    }   
+  }); 
+
+
+  return (
+    <div>{electionList}</div>
+  );
 };
 
 
